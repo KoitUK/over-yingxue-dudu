@@ -7,4 +7,5 @@ import java.util.List;
 @Repository
 public interface AdminDao {
     public List<Admin> adminList();
+    public Admin selectAdmin(Integer id);
 }

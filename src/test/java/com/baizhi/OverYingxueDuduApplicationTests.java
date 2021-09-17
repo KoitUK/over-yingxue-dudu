@@ -19,5 +19,11 @@ class OverYingxueDuduApplicationTests {
             System.out.println(admin);
         }
     }
+    @Test
+    public void test1(){
+        Integer id=1;
+        Admin admin=dao.selectAdmin(id);
+        System.out.println(admin);
+    }
 
 }

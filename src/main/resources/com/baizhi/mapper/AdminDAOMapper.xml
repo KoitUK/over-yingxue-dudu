@@ -6,5 +6,8 @@
         select id,username,password,create_time as createTime,update_time as updateTime,delete_time as deleteTime from
             yx_admin
     </select>
-
+    <select id="selectAdmin" resultType="Admin">
+        select id username,password,create_time as createTime,update_time as updateTime,delete_time as deleteTime from
+            yx_admin where id=#{id}
+    </select>
 </mapper>
